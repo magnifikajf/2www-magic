@@ -1,0 +1,52 @@
+/* --------------------
+BASE STYLE
+--------------------- */
+
+html {
+   box-sizing: border-box; 
+   margin: 0;
+   padding: 0; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+body {
+    
+}
+
+/* HEADER */
+
+.logo-menu-icon {
+    background-color: #1B1B1B; 
+}
+
+/* NAV */ 
+
+.main-nav {
+    background-color: #2A3333; 
+}
+
+
+/* MAIN COLUMNS */
+
+.column {
+    display: inline-block; 
+    width: 33%;  
+}
+
+h2 {
+    float: right; 
+    
+    
+}
+
+/*MAIN*/
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #2A3333; 
+}
+}
