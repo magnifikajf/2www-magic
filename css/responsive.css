@@ -1,4 +1,14 @@
+#container {
+  width: 100%;     
+}
+
 .column {
     width: 100%; 
     display: inline-block; 
+}
+
+.big-photo {
+    width: 100%; 
+    float: none; 
+    margin-right: 0px; 
 }

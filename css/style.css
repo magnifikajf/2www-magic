@@ -5,7 +5,7 @@ BASE STYLE
 html {
    box-sizing: border-box; 
    font-family: 'Encode Sans Condensed', sans-serif;
-    line-height: 1.5
+ 
 }
 
 *, *:before, *:after {
@@ -13,6 +13,7 @@ html {
 }
 body {
 	font-size: 15px;
+   
 
 }
 
@@ -23,9 +24,21 @@ body {
 
 /* HEADER */
 
+
 .logo-menu-icon {
+	margin: 10px 0px;
+	width: 100%;
+	height: 100px;
     background-color: #1B1B1B; 
+    margin:0; 
+    
 }
+.main-header img {
+  position: relative; 
+  padding-top: 20px; 
+  padding-left: 20px; 
+}
+
 
 .menu-hamburger {
     display: none; 
@@ -36,50 +49,81 @@ body {
     background-color: #2A3333; 
 }
 
+.main-nav ul {
+    margin: 0; 
+    padding: 10px; 
+   
+}
+
 .main-nav li{
     display: inline-block;
-    padding-top: 15px; 
-    padding-bottom: 15px; 
-    
+    margin-right: 20px;   
 }
 
 a {
     text-decoration: none;
     color: white; 
-    margin-right: 30px; 
 }
 
 /* MAIN HEADER */ 
 
-
-
-#header_main_text p {
-	color: #ffffff;
-    padding-top: 280px; 
-}
-
-#header_main_image {
-	float: left;
+#header-main-image {
+    float: left; 
 	background: url(../images/bg_header.png) no-repeat;
-	width: 100%;
-	height: 100%;
+	height: 100%;    margin: 30px 20px; 
 }
+#header-main-text {
+	float: left;
+	text-shadow: #000 0px 1px 0px;
+	margin-top: 276px;
+	background: url(../images/bg_text.png);
+}
+#header-main-text p {
+	color: #ffffff;
+    line-height: 20px; 
+    padding: 10px 10px 5px; 
+   
+}
+
 
 
 /* MAIN COLUMNS */
 
 .column {
     display: inline-block; 
-    width: 33%;  
+    width: 25%; 
+    margin-top: 10px; 
+    margin-bottom: 30px; 
+    line-height: 1.2; 
 }
-h2 {
-    float: right; 
+
+.column-box {
+    display: inline-block; 
+    
 }
+.column h3 {
+    font-size: 25px;
+    font-weight: bold; 
+}
+
+.column p {
+    
+}
+
+.column h4 {
+    
+}
+
+.column-box {
+    
+}
+
 
 /*MAIN*/
 
 .main-content {
     position: relative; 
+  
 }
 
 
