@@ -1,3 +1,5 @@
+/*Netbook*/
+@media (max-width: 1400px) {
 /* --------------------
 BASE STYLE
 --------------------- */
@@ -15,7 +17,7 @@ body {
     font-size: 15px;
 }
 #container {
-    width: 920px;
+    /*width: 920px;*/
     margin: 0 auto;
 }
 /* HEADER */
@@ -54,31 +56,38 @@ a {
 }
 /* MAIN HEADER */
 
+
+
 .header-main {
     max-width: 100%; 
-	height: 380px;
+	/*height: 380px;*/
     margin: 5px; 
 	border: 2px solid #eee;
 	padding: 2px;
+    position: relative; 
 }
 
-#header-main-image {
-    float: left;
-    background: url(../images/bg_header.png) no-repeat;
-    height: 350px;
-    margin: 10px;
-}
+
 #header-main-text {
     float: left;
     text-shadow: #000 0px 1px 0px;
-    margin-top: 276px;
-    background: url(../images/bg_text.png);
+    background: url(../images/bg_header.png);
+    background-size: cover; 
+    margin: 10px; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    max-width: 100%; 
+    height: 350px;
+    position: relative; 
+    
 }
-#header-main-text p {
+.header-main-paragraph {
     color: gainsboro;
+    margin-top: 275px;  
     line-height: 17px;
     padding: 20px 15px 20px 15px;
     font-size: 15px;
+    background-image: url(../images/bg_text.png); 
 }
 .clear {
     clear: both;
@@ -120,4 +129,66 @@ footer p {
     font-size: 14px;
     color: gainsboro;
     line-height: 1.3;
+}
+}
+
+/*Tablet*/
+@media (max-width: 790px) {
+     #container {
+  max-width: 100%;     
+}
+    .column {
+    float: left;
+    width: 27%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    color: #31353a;
+}
+.column-box {
+    float: left;
+    margin-top: 12px;
+}
+.header-main-paragraph {
+    color: gainsboro;
+    margin-top: 258px;  
+    line-height: 17px;
+    padding: 20px 15px 20px 15px;
+    font-size: 15px;
+    background-image: url(../images/bg_text.png); 
+}
+}
+
+/*SMARTFON*/
+@media (max-width: 599px) {
+    #container {
+  max-width: 100%;     
+}
+
+.column {
+    width: 100%; 
+    display: inline-block; 
+    padding-left: 10px; 
+    padding-bottom: 15px; 
+    border-bottom: 1px dashed black; 
+}
+
+.main-header .logo-menu-icon img {
+    max-width: 100%; 
+}
+
+.header-main, #header-main-image { 
+    display: none;
+}
+
+.main-nav ul li {
+    display: block; 
+    padding: 4px 4px 5px 5px;
+    border-bottom: 1px solid gainsboro; 
+}
+
+.column-box {
+    padding-left: 15px;
+}
+    
 }
